@@ -34,4 +34,22 @@
             android:layout_height="wrap_content"
             android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/icon_service_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintStart_toStartOf="@+id/icon_cost_of_service"
+        app:layout_constraintTop_toBottomOf="@+id/cost_of_service_edit_text"
+        app:srcCompat="@drawable/ic_service" />
+
+    <TextView
+        android:id="@+id/service_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How was the service?"
+        app:layout_constraintBottom_toBottomOf="@+id/icon_service_question"
+        app:layout_constraintStart_toStartOf="@+id/cost_of_service_edit_text" />
 </androidx.constraintlayout.widget.ConstraintLayout>
